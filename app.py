@@ -14,7 +14,7 @@ st.set_page_config(page_title="AI Resume Screening", layout="centered")
 st.title("🤖 AI Resume Screening & Ranking System")
 
 # ---------- Load Dataset ----------
-data = pd.read_csv("dataset/resume_data.csv")
+data = pd.read_csv("resume_data.csv")
 
 def clean_text(text):
     text = re.sub(r'[^a-zA-Z]', ' ', text).lower()
